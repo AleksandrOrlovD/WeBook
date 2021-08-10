@@ -1,0 +1,59 @@
+.book-page {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  background-color: #424242;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  margin: 0 auto 25px auto;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    align-self: flex-start;
+
+    @media (max-width: 767px) {
+      margin: 0 auto 25px auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    margin: 0 10px 0 20px;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-block: 0;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__publdate {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+
+  &__description {
+    font-size: 18px;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+}

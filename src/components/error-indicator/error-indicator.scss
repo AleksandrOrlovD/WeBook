@@ -1,0 +1,22 @@
+.error-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25px auto 25px auto;
+
+  &__icon {
+    margin-bottom: 100px;
+  }
+
+  &__message {
+    font-size: 36px;
+    color: #F44336;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+}
+
